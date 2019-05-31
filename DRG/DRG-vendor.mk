@@ -83,6 +83,8 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/DRG/proprietary/lib64/vendor.qti.esepowermanager@1.0.so:system/lib64/vendor.qti.esepowermanager@1.0.so \
     vendor/nokia/DRG/proprietary/lib64/vendor.qti.hardware.vpp@1.1.so:system/lib64/vendor.qti.hardware.vpp@1.1.so \
 
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/nokia/DRG/proprietary/app/NCamera/lib/arm64,system/app/NCamera/lib/arm64)
+
 PRODUCT_PACKAGES += \
     libantradio \
     vendor.qti.hardware.fm@1.0 \
@@ -90,6 +92,7 @@ PRODUCT_PACKAGES += \
     datastatusnotification \
     embms \
     GCam \
+    NCamera \
     CNEService \
     dpmserviceapp \
     ims \
